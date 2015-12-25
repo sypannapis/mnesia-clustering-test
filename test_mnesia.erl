@@ -40,7 +40,7 @@ stop() ->
 add_node(Name) ->
   connect_node(Name),
   mnesia:change_config(extra_db_nodes,[Name]),
-  mnesia:add_table_copy(shop,Name,disc_copies),
+  mnesia:add_table_copy(shop,Name,ram_copies),
   mnesia:add_table_copy(cost,Name,ram_copies),
   mnesia:add_table_copy(design,Name,ram_copies).
 
