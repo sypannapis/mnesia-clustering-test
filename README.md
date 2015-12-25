@@ -1,0 +1,1 @@
+# mnesia-clustering-test
